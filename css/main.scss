@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,500,700,900");
+@import url("https://fonts.googleapis.com/css?family=Courgette|Roboto:400,500");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab");
+@mixin font($ff:'Lato',
+$weight:400,
+$size:18px,
+$color:#fff) {
+    font-family: $ff;
+    color: $color;
+    font-size: $size;
+    font-weight: $weight;
+    letter-spacing: 0.18px;
+    line-height: 30px;
+}
+
+@mixin button($color:#fff) {
+    border: 2px $color dashed;
+    border-radius: 30px;
+    opacity: 0.84;
+    width: 191px;
+    height: 60px;
+    background: none;
+}
+
+html,
+body {
+    //min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: grey;
+}
+
+
+// button {
+//     @include button();
+//     @include font('Segoe Print');
+//     margin-bottom: 50px;
+//     &:hover {
+//         background-color: #259999;
+//     }
+// }
+.container-ag {
+    height: 100vh;
+    margin: 0 auto;
+    max-width: 1900px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .preview {
+        box-sizing: border-box;
+        padding: 20px;
+        width: 50%;
+        img {
+            max-width: 100%;
+        }
+        .cover {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+    }
+    .info {
+        box-sizing: border-box;
+        padding: 20px;
+        width: 50%;
+        text-align: left;
+        &__first {
+            @include font('Lato',
+            700,
+            55px,
+            #fff);
+            line-height: 60px;
+        }
+        &__third {
+            @include font('Segoe Print',
+            400,
+            24px,
+            #abf2f1);
+            letter-spacing: 0.6px;
+            line-height: 24px;
+            padding-bottom: 26px;
+        }
+        &__second {
+            @include font('Lato',
+            900,
+            55px,
+            #fff);
+            line-height: 60px;
+            text-transform: uppercase;
+        }
+        &__fourth {
+            @include font('Lato',
+            400,
+            18px,
+            #fff);
+            line-height: 30px;
+            max-width: 478px;
+            padding-bottom: 58px;
+        }
+        &__links {
+            div {
+                display: inline-block;
+            }
+            svg:hover {
+                fill: grey;
+            }
+        }
+    }
+}
+
+.slick-slide:focus {
+    outline: none;
+}
+
+@media (max-width: 700px) {
+    .container-ag {
+        flex-direction: column;
+        .preview {
+            width: 100%;
+        }
+        .info {
+            width: 100%;
+            text-align: center;
+        }
+    }
+}

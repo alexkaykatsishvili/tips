@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,500,700,900");
+@import url("https://fonts.googleapis.com/css?family=Courgette|Roboto:400,500");
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab");
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: grey; }
+
+.container-ag {
+  height: 100vh;
+  margin: 0 auto;
+  max-width: 1900px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .container-ag .preview {
+    box-sizing: border-box;
+    padding: 20px;
+    width: 50%; }
+    .container-ag .preview img {
+      max-width: 100%; }
+    .container-ag .preview .cover {
+      max-width: 600px;
+      margin: 0 auto; }
+  .container-ag .info {
+    box-sizing: border-box;
+    padding: 20px;
+    width: 50%;
+    text-align: left; }
+    .container-ag .info__first {
+      font-family: "Lato";
+      color: #fff;
+      font-size: 55px;
+      font-weight: 700;
+      letter-spacing: 0.18px;
+      line-height: 30px;
+      line-height: 60px; }
+    .container-ag .info__third {
+      font-family: "Segoe Print";
+      color: #abf2f1;
+      font-size: 24px;
+      font-weight: 400;
+      letter-spacing: 0.18px;
+      line-height: 30px;
+      letter-spacing: 0.6px;
+      line-height: 24px;
+      padding-bottom: 26px; }
+    .container-ag .info__second {
+      font-family: "Lato";
+      color: #fff;
+      font-size: 55px;
+      font-weight: 900;
+      letter-spacing: 0.18px;
+      line-height: 30px;
+      line-height: 60px;
+      text-transform: uppercase; }
+    .container-ag .info__fourth {
+      font-family: "Lato";
+      color: #fff;
+      font-size: 18px;
+      font-weight: 400;
+      letter-spacing: 0.18px;
+      line-height: 30px;
+      line-height: 30px;
+      max-width: 478px;
+      padding-bottom: 58px; }
+    .container-ag .info__links div {
+      display: inline-block; }
+    .container-ag .info__links svg:hover {
+      fill: grey; }
+
+.slick-slide:focus {
+  outline: none; }
+
+@media (max-width: 700px) {
+  .container-ag {
+    flex-direction: column; }
+    .container-ag .preview {
+      width: 100%; }
+    .container-ag .info {
+      width: 100%;
+      text-align: center; } }
+
+/*# sourceMappingURL=main.css.map */
